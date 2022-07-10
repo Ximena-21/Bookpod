@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerTop{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerBtn{
+    width: 30px;
+    height: 30px;
+    background: url(./img/menu.png) no-repeat center;
+    border: none;
+}
+
+/* oculto el toda la lista del menu usando display: none */
+.headerMenu{
+    display: none;
+    font-size: 14px;
+    padding: 20px;
+/*     display: flex; */
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.headerMenu ul{
+    list-style: none;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.headerMenu a{
+    text-decoration: none;
+    color: blueviolet;
+}
