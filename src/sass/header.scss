@@ -3,68 +3,73 @@
 .header{
     margin-top: 15px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    // position: fixed;
-}
+    position: relative;
+    z-index: 2;
+    /* display: flex; */
+    /* flex-direction: column; */
 
+    &_top {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.headerTop{
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-}
+    &_btn {
+        width: 30px;
+        height: 30px;
+        max-height: 40px;
+        margin-right: 15px;
+        background: url(../img/menu.png) no-repeat center;
+        border: none;
+    }
 
-.headerBtn{
-    width: 30px;
-    height: 30px;
-    max-height: 40px;
-    margin-right: 15px;
-    background: url(../img/menu.png) no-repeat center;
-    border: none;
-}
-
-/* oculto el toda la lista del menu usando display: none */
-.headerMenu{
-    width: 100%;
-    max-height: 250px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &_menu {
+        width: 100%;
+        max-height: 250px;
     
-    position: absolute;
-    left: 0;
-    top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        position: absolute;
+        left: 0;
+        
+        padding: 0px 50px;
     
-    padding: 0px 50px;
-
-    font-size: 14px;
-
-    overflow: hidden;
-
-    transition: all 0.4s;
-
-    background-color: #00baae65;
-}
-
-.headerMenu--hidden{
-    max-height: 0px;
+        font-size: 14px;
     
-}
+        overflow: hidden;
+    
+        transition: all 0.4s;
+    
+        background-color: #D67F7F;
 
-.headerMenu ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;   
-}
+        ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;   
+        }
+        
+        li {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 0px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #323232;
+        }
 
-.headerMenu a{
-    text-decoration: none;
-    color: blueviolet;
+    }
+
+    &_menu--hidden{
+        max-height: 0px;
+        
+    }
 }

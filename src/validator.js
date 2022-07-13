@@ -35,6 +35,7 @@ function validateCreditCard (creditCardNumber) {
   return validate
 
 } 
+// validateCreditCard('5558256294239457');
 
 //funcion que me enmascare todos los digitos menos los ultimos 4
 function maskifyCreditCard (creditCardNumber) {
@@ -57,10 +58,11 @@ function maskifyCreditCard (creditCardNumber) {
   const maskedNumber = transformCCNumberArray.join('');
   
   //usando el metodo .concat concatenamos texto 
-  // return maskedNumber.concat(noTransformCCNumber)
   return maskedNumber.concat(noTransformCCNumber)
+//   console.log(maskedNumber.concat(noTransformCCNumber)) 
 
 }
+// maskifyCreditCard('5558256294239457');
 
 
 const validator = {

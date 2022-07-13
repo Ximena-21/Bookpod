@@ -13,7 +13,7 @@
     align-content: center;
     align-items: center;
     position: absolute;
-    top: 140px;
+    top: 100px;
     width: 90%;
     padding: 0px 20px; }
   .home_background {
@@ -22,7 +22,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0.8;
     object-fit: cover;
     object-position: 45% 100%; }
   .home_information {
@@ -30,8 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center;
-    gap: 20px; }
+    align-items: center; }
   .home_imgBook {
     margin-top: 70px; }
   .home_tittle {
@@ -43,10 +41,32 @@
     text-align: center;
     color: #ffffff;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 32px; }
+    font-size: 30px;
+    padding-top: 30px; }
   .home_text {
     text-align: center;
     color: #ffffff;
     font-family: serif;
     font-weight: 100;
-    font-size: 24px; }
+    font-size: 22px;
+    padding-top: 20px; }
+  .home_imgBook {
+    width: 100%; }
+
+.home_btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-style: none;
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 40px; }
+
+/* .home_btnSuscription {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-style: none;
+    background: white;
+    font-size: 16px;
+    margin-top: 40px;  
+} */

@@ -23,7 +23,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     &_containerInfo{
         @include flex-column-center(); //ESTO NO LO HEREDA DEK ANTERIOR??
         position: absolute;
-        top: 190px;
+        top: 100px;
         width: 90%;
         padding: 0px 20px;
     }
@@ -34,14 +34,12 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         position: absolute;
         left: 0;
         top: 0;
-        opacity: 0.8;
         object-fit: cover;
         object-position: 45% 100%;
     }
 
     &_information {
         @include flex-column-center();
-        gap: 20px;
     }
 
     &_imgBook {
@@ -59,8 +57,8 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         color: $text-color;
         font-family: $font-text;
-        font-size: 32px;
-        padding-top: 50px;
+        font-size: 30px;
+        padding-top: 30px;
     }
 
     &_text {
@@ -68,17 +66,29 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: $text-color;
         font-family:serif;
         font-weight: 100;
-        font-size: 24px;
-        padding-top: ;
+        font-size: 22px;
+        padding-top: 20px;
     }
-    //esto no lo lee
-    &_btnSuscription {
-        padding: 10px 15px;
-        border-radius: 8px;
-        border-style: none;
-        background: white;
-        font-size: 16px;
-        margin-top: 40px;
+
+    &_imgBook{
+        width: 100%;
     }
 }
+
+.home_btn {
+    @include button();
+    border-style: none;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+/* .home_btnSuscription {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-style: none;
+    background: white;
+    font-size: 16px;
+    margin-top: 40px;  
+} */
 

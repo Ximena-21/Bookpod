@@ -1,6 +1,6 @@
 // import validator from './validator.js';
-const headerBtn = document.querySelector('.headerBtn')
-const headerMenu = document.querySelector('.headerMenu')
+const headerBtn = document.querySelector('.header_btn')
+const headerMenu = document.querySelector('.header_menu')
 
 
 headerBtn.addEventListener('click', toggleMenu)
@@ -14,7 +14,7 @@ function toggleMenu () {
     // } else {
     //     headerMenu.style.display = 'none'
     // }
-    headerMenu.classList.toggle('headerMenu--hidden')
+    headerMenu.classList.toggle('header_menu--hidden')
 }
 
 
