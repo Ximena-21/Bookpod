@@ -1,5 +1,52 @@
 /* ----------------------- MAIN SECTION ----------------------- */
-.main {
-  margin: 40px 0px;
-  height: 250px;
-  background: red; }
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .home_containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    width: 90%;
+    padding: 0px 20px; }
+  .home_background {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: 45% 100%; }
+  .home_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px; }
+  .home_imgBook {
+    margin-top: 70px; }
+  .home_tittle {
+    font-size: 45px;
+    color: #ffffff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 900; }
+  .home_slogan {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 32px; }
+  .home_text {
+    text-align: center;
+    color: #ffffff;
+    font-family: serif;
+    font-weight: 100;
+    font-size: 24px; }

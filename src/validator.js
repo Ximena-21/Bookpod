@@ -1,6 +1,6 @@
 const validator = {
-  isValid: ()=>{},
-  maskify: function(){},
+  isValid: validateCreditCard,
+  maskify: maskifyCreditCard,
 };
 
 
