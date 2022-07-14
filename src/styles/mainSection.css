@@ -4,13 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center; }
   .home_containerInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
     position: absolute;
     top: 100px;
@@ -29,7 +27,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center; }
   .home_imgBook {
     width: 90%;
@@ -104,7 +101,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   position: absolute;
   top: 800px;
@@ -126,14 +122,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center; }
   .aboutUs_containerInf {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
     padding-top: 20px; }
   .aboutUs_textInf {
@@ -179,7 +173,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   position: absolute;
   top: 2100px;
@@ -191,7 +184,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center; }
   .advantage_box--click {
     background: #2A7B9B; }
@@ -220,3 +212,49 @@
 @media (min-width: 1024px) {
   .advantage {
     top: 1520px; } }
+
+/* ----------------------- BOOKS GALLERY SECTION ----------------------- */
+.bookGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3040px;
+  padding: 50px 20px 60px; }
+  .bookGallery_tittle {
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .bookGallery_textDecoration {
+    width: 85%;
+    max-width: 400px;
+    padding-bottom: 20px; }
+  .bookGallery_textBooks {
+    width: 90%;
+    font-size: 24px;
+    font-family: serif;
+    font-weight: 400;
+    text-align: center; }
+  .bookGallery_containerBooks {
+    width: 90%;
+    height: 360px;
+    /* display: flex; */
+    overflow-x: scroll;
+    gap: 10px;
+    margin-top: 50px; }
+  .bookGallery_books-carrusel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px; }
+  .bookGallery_boxImgBooks {
+    transform-origin: center left; }
+  .bookGallery_imgBooks {
+    width: 120px;
+    max-width: 250px;
+    height: 180px;
+    max-height: 320px; }

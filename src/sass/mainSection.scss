@@ -6,7 +6,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    // align-content: center;
     align-items: center;
 }
 
@@ -26,6 +26,19 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
+@mixin textTittle{
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin ImgTxDecoration {
+    width: 85%;
+    max-width: 400px;
+    padding-bottom: 20px;
+}
 
 .home{
     width: 100%;
@@ -177,17 +190,11 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     &_tittle {
         width: 90%;
-        padding: 10px 0;
-        font-size: 30px;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-align: center;
+        @include textTittle();
     }
 
     &_textDecoration{
-        width: 85%;
-        max-width: 400px;
-        padding-bottom: 20px;
+        @include ImgTxDecoration();
     }
 
     &_boxInformation{
@@ -318,3 +325,59 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
 
+/* ----------------------- BOOKS GALLERY SECTION ----------------------- */
+.bookGallery{
+
+    @include flex-column-center();
+    position: absolute;
+    top: 3040px;
+    padding: 50px 20px 60px;
+
+    &_tittle{
+        @include textTittle()
+    }
+
+    &_textDecoration{
+        @include ImgTxDecoration();
+    }
+
+    &_textBooks{
+        width: 90%;
+        @include textInfo();
+    }
+
+    &_containerBooks{
+        width: 90%;
+        height: 360px;
+        /* display: flex; */
+        overflow-x: scroll;
+        gap: 10px;
+        margin-top: 50px;
+        // overflow-y: hidden; 
+        // overflow-x: auto;
+        // white-space: nowrap;
+    }
+
+    &_books-carrusel{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        // cursor: pointer;
+        // scroll-behavior: smooth;
+    }
+
+    &_boxImgBooks{
+        transform-origin: center left;
+    }
+
+    &_imgBooks{
+        width: 120px;
+        max-width: 250px;
+        height: 180px;
+        max-height: 320px;
+        // padding: 0;
+        // width: 120px;
+    }
+}
