@@ -1,4 +1,4 @@
-/* ----------------------- MAIN SECTION ----------------------- */
+/* ----------------------- HOME SECTION ----------------------- */
 $text-color: #ffffff;
 $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -13,6 +13,13 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 @mixin button{
     padding: 10px 15px;
     border-radius: 5px;
+}
+
+@mixin textInfo {
+    font-size: 24px;
+    font-family: serif;
+    font-weight: 400;
+    text-align: center; 
 }
 
 
@@ -83,12 +90,35 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     margin-top: 40px;
 }
-/* .home_btnSuscription {
-    padding: 10px 15px;
-    border-radius: 8px;
-    border-style: none;
-    background: white;
-    font-size: 16px;
-    margin-top: 40px;  
-} */
 
+/* ----------------------- ABOUT-US SECTION ----------------------- */
+
+.aboutUs{
+    width: 100%;
+    @include flex-column-center();
+    position: absolute;
+    top: 800px;
+    padding: 40px 20px 60px;
+
+    &_tittle {
+        padding-bottom: 20px;
+        font-size: 32px;
+        font-family: sans-serif;
+    }
+
+    &_containerInfo {
+        width: 100%;
+        @include flex-column-center();
+        padding-top: 20px;
+    }
+
+    &_textInf{
+        @include textInfo();
+    }
+
+    &_img {
+        margin: 40px 0 30px;
+    }
+}
+
+/* ----------------------- ADVANTAGE SECTION ----------------------- */
