@@ -1,11 +1,16 @@
 /* ----------- HEADER ------------------ */
+/* @mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+} */
 .header {
   margin-top: 15px;
   width: 100%;
   position: relative;
-  z-index: 2;
-  /* display: flex; */
-  /* flex-direction: column; */ }
+  z-index: 2; }
   .header_top {
     display: flex;
     justify-content: space-between;
@@ -16,7 +21,16 @@
     max-height: 40px;
     margin-right: 15px;
     background: url(../img/menu.png) no-repeat center;
-    border: none; }
+    border: none;
+    cursor: pointer; }
+  .header_btnX {
+    width: 30px;
+    height: 30px;
+    max-height: 40px;
+    margin-right: 15px;
+    background: url(../img/menuX.png) no-repeat center;
+    border: none;
+    cursor: pointer; }
   .header_menu {
     width: 100%;
     max-height: 250px;
@@ -39,12 +53,49 @@
       align-items: center;
       padding: 15px; }
     .header_menu li {
+      width: 100%;
       font-family: sans-serif;
       font-weight: bold;
       font-size: 16px;
-      padding: 10px 0px; }
+      padding: 10px 0px;
+      display: flex;
+      justify-content: center; }
+      .header_menu li :hover {
+        border-bottom: 1px solid white; }
     .header_menu a {
       text-decoration: none;
       color: #323232; }
   .header_menu--hidden {
     max-height: 0px; }
+
+@media (min-width: 1024px) {
+  .header {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .header_top {
+      justify-content: center; }
+    .header_menu {
+      width: auto;
+      padding: 0px;
+      position: initial;
+      overflow: visible; }
+      .header_menu ul {
+        flex-direction: row;
+        gap: 20px;
+        padding: 8px; }
+      .header_menu li {
+        width: auto;
+        padding: 0px;
+        font-weight: 500; }
+      .header_menu a {
+        color: #ffffff; }
+    .header_btn {
+      display: none; }
+  .contact {
+    border-radius: 8px;
+    background-color: #D67F7F;
+    padding: 10px 15px; }
+    .contact:hover {
+      background-color: #c17474; } }
