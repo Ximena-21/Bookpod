@@ -168,20 +168,35 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 /* ----------------------- ABOUT-US SECTION ----------------------- */
 
-/* .aboutUs{
+.aboutUs{
     width: 100%;
     @include flex-column-center();
     position: absolute;
     top: 800px;
-    padding: 40px 20px 60px;
+    padding: 50px 20px 60px;
 
     &_tittle {
-        padding-bottom: 20px;
+        width: 90%;
+        padding: 10px 0;
         font-size: 30px;
         font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
     }
 
-    &_containerInfo {
+    &_textDecoration{
+        width: 85%;
+        max-width: 400px;
+        padding-bottom: 20px;
+    }
+
+    &_boxInformation{
+        width: 90%;
+        padding-top: 20px;
+        @include flex-column-center();
+    }
+
+    &_containerInf {
         width: 100%;
         @include flex-column-center();
         padding-top: 20px;
@@ -192,10 +207,58 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     &_img {
-        margin: 40px 0 30px;
+        width: 250px;
+        max-width: 450px;
+        margin: 30px 0 40px;
     }
-} */
+}
 
+@media (min-width: 750px){
+    .aboutUs {
+        margin-top: 60px;
+
+        &_tittle {
+            padding-top: 60px;
+            font-size: 42px;
+        }
+
+        &_containerInf--first {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &_containerInf--second{
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+        
+        &_textInf{
+            width: 60%;
+        }
+
+        &_textInf--first {
+            text-align: start;
+        }
+
+        &_textInf--second {
+            text-align: end;
+        }
+
+        &_img{
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .aboutUs {
+        margin-top: 0;
+
+        &_tittle {
+            padding-top: 0;
+        }
+    }
+}
 /* ----------------------- ADVANTAGE SECTION ----------------------- */
 /* .advantage {
     width: 100%;
