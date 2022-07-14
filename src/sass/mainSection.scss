@@ -22,6 +22,10 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center; 
 }
 
+@mixin containerAdvange {
+
+}
+
 
 .home{
     width: 100%;
@@ -102,7 +106,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     &_tittle {
         padding-bottom: 20px;
-        font-size: 32px;
+        font-size: 30px;
         font-family: sans-serif;
     }
 
@@ -122,3 +126,45 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* ----------------------- ADVANTAGE SECTION ----------------------- */
+.advantage {
+    width: 100%;
+    @include flex-column-center();
+    position: absolute;
+    top: 1960px;
+    padding: 40px 0 60px;
+
+    &_box{
+        width: 100%;
+        height: 220px;
+        @include flex-column-center();
+        // background: burlywood;
+        // border: 2px solid black;
+        padding: 30px 70px;
+    }
+
+    &_box--click{
+        background: #2A7B9B; 
+    }
+
+    &_box--books{
+        background: #3D3D6B;
+    }
+
+    &_box--readers{
+        background: #00BAAD;
+    }
+
+    &_box--downlands{
+        background: #511849;
+    }
+
+    &_text{
+        font-size: 24px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+

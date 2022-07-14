@@ -28,6 +28,7 @@
         margin-right: 15px;
         background: url(../img/menu.png) no-repeat center;
         border: none;
+        cursor: pointer;
     }
 
     &_menu {
@@ -62,10 +63,17 @@
         }
         
         li {
+            width: 100%;
             font-family: sans-serif;
             font-weight: bold;
             font-size: 16px;
             padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            
+            & :hover {
+                border-bottom: 1px solid white; 
+            }
         }
         
         a {
@@ -106,19 +114,31 @@
             }
 
             li {
+                width: auto;
                 padding: 0px;
+                font-weight: 500;
             }
 
             a {
-                color: #ffff;
-                background-color: #D67F7F;
-                padding: 10px 15px;
+                color: #ffffff;
             }
         }
         
         &_btn {
             display: none;
         }
+    }
+
+    //esto no lo he guardado en main ni en el header
+    .contact{
+        border-radius: 8px;
+        background-color: #D67F7F;
+        padding: 10px 15px;
+
+        &:hover{
+            background-color: #c17474;  
+        }
+
     }
 }
 
