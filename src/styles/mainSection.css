@@ -75,7 +75,7 @@
   padding: 40px 20px 60px; }
   .aboutUs_tittle {
     padding-bottom: 20px;
-    font-size: 32px;
+    font-size: 30px;
     font-family: sans-serif; }
   .aboutUs_containerInfo {
     width: 100%;
@@ -94,3 +94,37 @@
     margin: 40px 0 30px; }
 
 /* ----------------------- ADVANTAGE SECTION ----------------------- */
+.advantage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1960px;
+  padding: 40px 0 60px; }
+  .advantage_box {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px 70px; }
+  .advantage_box--click {
+    background: #2A7B9B; }
+  .advantage_box--books {
+    background: #3D3D6B; }
+  .advantage_box--readers {
+    background: #00BAAD; }
+  .advantage_box--downlands {
+    background: #511849; }
+  .advantage_text {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 20px; }
