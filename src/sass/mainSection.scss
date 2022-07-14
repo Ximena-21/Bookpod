@@ -11,7 +11,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @mixin button{
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
@@ -21,7 +21,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     @include flex-column-center();
 
     &_containerInfo{
-        @include flex-column-center(); //ESTO NO LO HEREDA DEK ANTERIOR??
+        @include flex-column-center(); 
         position: absolute;
         top: 100px;
         width: 90%;
@@ -39,11 +39,14 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     &_information {
+        width: 70%;
         @include flex-column-center();
     }
 
     &_imgBook {
-        margin-top: 70px;
+        width: 90%;
+        max-width: 300px;
+        margin-top: 50px;
     }
 
     &_tittle {
@@ -70,9 +73,6 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-top: 20px;
     }
 
-    &_imgBook{
-        width: 100%;
-    }
 }
 
 .home_btn {
@@ -83,12 +83,74 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     margin-top: 40px;
 }
-/* .home_btnSuscription {
-    padding: 10px 15px;
-    border-radius: 8px;
-    border-style: none;
-    background: white;
-    font-size: 16px;
-    margin-top: 40px;  
-} */
 
+@media (min-width: 750px) {
+
+    .home{
+
+        &_background{
+            object-position: 50% 100%;
+        }
+
+        &_containerInfo{
+            top: 220px;
+        }
+        
+        &_tittle {
+            font-size: 65px;
+            letter-spacing: 5px;    
+        }
+
+        &_slogan{
+            padding-top: 60px;
+        }
+
+        &_imgBook{
+            margin-top: 80px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .home{
+
+        &_background{
+            //debo quitar esto para que la imagen se ajuste
+                /* object-fit: cover; */
+                /* object-position: 45% 100%;*/
+        }
+
+        &_containerInfo{
+            flex-direction: row;
+            padding: 0 60px;
+        }
+
+        &_information{
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &_tittle {
+            text-align: start;   
+        }
+
+        &_slogan{
+            text-align: start;
+        }
+
+        &_text{
+            text-align: start;
+        }
+
+        &_imgBook{
+            margin-top: 0;
+            max-width: 400px;
+        }
+    }
+    
+    .home_btn{
+    //    box-shadow: rgb(0 0 0 /35%) 0px 5px 15px;
+       box-shadow: rgb(0, 0, 0/35%) 0px 5px 15px;
+    }
+}
