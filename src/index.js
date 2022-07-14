@@ -15,6 +15,10 @@ function toggleMenu () {
     //     headerMenu.style.display = 'none'
     // }
     headerMenu.classList.toggle('header_menu--hidden')
+
+//     if (headerMenu.classList.toggle('header_menu--hidden')) {
+//         headerBtn.className = 'header_btnX'
+//     }
 }
 
 
