@@ -1,65 +1,26 @@
 /* ----------------------- HOME SECTION ----------------------- */
-$text-color: #ffffff;
-$font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-@mixin flex-column-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // align-content: center;
-    align-items: center;
-}
-
-@mixin button{
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-@mixin textInfo {
-    font-size: 24px;
-    font-family: serif;
-    font-weight: 400;
-    text-align: center; 
-}
-
-@mixin containerAdvange {
-
-}
-
-@mixin textTittle{
-    padding: 10px 0;
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
-
-@mixin ImgTxDecoration {
-    width: 85%;
-    max-width: 400px;
-    padding-bottom: 20px;
-}
+@import "./generics.scss";
 
 .home{
     width: 100%;
+    height: 850px;
     @include flex-column-center();
+    position: relative;
 
     &_containerInfo{
         @include flex-column-center(); 
-        position: absolute;
-        top: 100px;
         width: 90%;
         padding: 0px 20px;
     }
 
     &_background {
         width: 100%;
-        height: 800px;
+        height: 100%;
         position: absolute;
+        z-index: -1;
         left: 0;
         top: 0;
         object-fit: cover;
-        object-position: 45% 100%;
     }
 
     &_information {
@@ -111,15 +72,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 @media (min-width: 750px) {
 
     .home{
-
-        &_background{
-            object-position: 50% 100%;
-        }
-
-        &_containerInfo{
-            top: 220px;
-        }
-        
+ 
         &_tittle {
             font-size: 65px;
             letter-spacing: 5px;    
@@ -140,9 +93,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     .home{
 
         &_background{
-            //debo quitar esto para que la imagen se ajuste
-                /* object-fit: cover; */
-                /* object-position: 45% 100%;*/
+            height: 700px;
         }
 
         &_containerInfo{
@@ -172,6 +123,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             max-width: 400px;
         }
     }
+
     
     .home_btn{
     //    box-shadow: rgb(0 0 0 /35%) 0px 5px 15px;
@@ -179,205 +131,15 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
 
-/* ----------------------- ABOUT-US SECTION ----------------------- */
+@media (min-width: 1250px) {
+    .home{
 
-.aboutUs{
-    width: 100%;
-    @include flex-column-center();
-    position: absolute;
-    top: 800px;
-    padding: 50px 20px 60px;
-
-    &_tittle {
-        width: 90%;
-        @include textTittle();
-    }
-
-    &_textDecoration{
-        @include ImgTxDecoration();
-    }
-
-    &_boxInformation{
-        width: 90%;
-        padding-top: 20px;
-        @include flex-column-center();
-    }
-
-    &_containerInf {
-        width: 100%;
-        @include flex-column-center();
-        padding-top: 20px;
-    }
-
-    &_textInf{
-        @include textInfo();
-    }
-
-    &_img {
-        width: 250px;
-        max-width: 450px;
-        margin: 30px 0 40px;
-    }
-}
-
-@media (min-width: 750px){
-    .aboutUs {
-        margin-top: 60px;
-
-        &_tittle {
-            padding-top: 60px;
-            font-size: 42px;
-        }
-
-        &_containerInf--first {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        &_containerInf--second{
-            flex-direction: row-reverse;
-            justify-content: space-around;
-        }
-        
-        &_textInf{
-            width: 60%;
-        }
-
-        &_textInf--first {
-            text-align: start;
-        }
-
-        &_textInf--second {
-            text-align: end;
-        }
-
-        &_img{
-            margin: 0;
+        &_background{
+            height: 790px;
         }
     }
 }
 
-@media (min-width: 1024px){
-    .aboutUs {
-        margin-top: 0;
 
-        &_tittle {
-            padding-top: 0;
-        }
-    }
-}
-/* ----------------------- ADVANTAGE SECTION ----------------------- */
-.advantage {
-    width: 100%;
-    @include flex-column-center();
-    position: absolute;
-    top: 2100px;
-    margin: 60px 0 50px;
 
-    &_box{
-        width: 100%;
-        height: 220px;
-        padding: 40px 70px;
-        @include flex-column-center();
-    }
 
-    &_box--click{
-        background: #2A7B9B; 
-    }
-
-    &_box--books{
-        background: #3D3D6B;
-    }
-
-    &_box--readers{
-        background: #00BAAD;
-    }
-
-    &_box--downlands{
-        background: #511849;
-    }
-
-    &_text{
-        font-size: 24px;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: white;
-        text-align: center;
-        padding-top: 20px;
-    }
-}
-
-@media (min-width: 750px){
-    .advantage {
-        top: 1650px;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        &_box {
-            width: 50%;
-        }
-    }
-}
-
-@media (min-width: 1024px){
-    .advantage {
-        top: 1520px;
-    }
-}
-
-/* ----------------------- BOOKS GALLERY SECTION ----------------------- */
-.bookGallery{
-
-    @include flex-column-center();
-    position: absolute;
-    top: 3040px;
-    padding: 50px 20px 60px;
-
-    &_tittle{
-        @include textTittle()
-    }
-
-    &_textDecoration{
-        @include ImgTxDecoration();
-    }
-
-    &_textBooks{
-        width: 90%;
-        @include textInfo();
-    }
-
-    &_containerBooks{
-        width: 90%;
-        height: 360px;
-        /* display: flex; */
-        overflow-x: scroll;
-        gap: 10px;
-        margin-top: 50px;
-        // overflow-y: hidden; 
-        // overflow-x: auto;
-        // white-space: nowrap;
-    }
-
-    &_books-carrusel{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 10px;
-        // cursor: pointer;
-        // scroll-behavior: smooth;
-    }
-
-    &_boxImgBooks{
-        transform-origin: center left;
-    }
-
-    &_imgBooks{
-        width: 120px;
-        max-width: 250px;
-        height: 180px;
-        max-height: 320px;
-        // padding: 0;
-        // width: 120px;
-    }
-}

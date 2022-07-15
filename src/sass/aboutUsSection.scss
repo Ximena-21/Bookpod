@@ -1,0 +1,87 @@
+/* ----------------------- ABOUT-US SECTION ----------------------- */
+@import "./generics.scss";
+
+.aboutUs{
+    width: 100%;
+    @include flex-column-center();
+    
+    padding: 50px 20px 60px;
+
+    &_tittle {
+        width: 90%;
+        @include textTittle();
+    }
+
+    &_textDecoration{
+        @include ImgTxDecoration();
+    }
+
+    &_boxInformation{
+        width: 90%;
+        padding-top: 20px;
+        @include flex-column-center();
+    }
+
+    &_containerInf {
+        width: 100%;
+        @include flex-column-center();
+        padding-top: 20px;
+    }
+
+    &_textInf{
+        @include textInfo();
+    }
+
+    &_img {
+        width: 250px;
+        max-width: 450px;
+        margin: 30px 0 40px;
+    }
+}
+
+@media (min-width: 750px){
+    .aboutUs {
+        margin-top: 60px;
+
+        &_tittle {
+            padding-top: 60px;
+            font-size: 42px;
+        }
+
+        &_containerInf--first {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &_containerInf--second{
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+        
+        &_textInf{
+            width: 60%;
+        }
+
+        &_textInf--first {
+            text-align: start;
+        }
+
+        &_textInf--second {
+            text-align: end;
+        }
+
+        &_img{
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .aboutUs {
+        margin-top: 0;
+
+        &_tittle {
+            padding-top: 0;
+        }
+    }
+}

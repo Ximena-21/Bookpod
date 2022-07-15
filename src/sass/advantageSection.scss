@@ -1,0 +1,57 @@
+/* ----------------------- ADVANTAGE SECTION ----------------------- */
+@import "./generics.scss";
+
+
+.advantage {
+    width: 100%;
+    @include flex-column-center();
+    margin: 60px 0 50px;
+
+    &_box{
+        width: 100%;
+        height: 220px;
+        padding: 40px 70px;
+        @include flex-column-center();
+    }
+
+    &_box--click{
+        background: #2A7B9B; 
+    }
+
+    &_box--books{
+        background: #3D3D6B;
+    }
+
+    &_box--readers{
+        background: #00BAAD;
+    }
+
+    &_box--downlands{
+        background: #511849;
+    }
+
+    &_text{
+        font-size: 24px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 750px){
+    .advantage {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &_box {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .advantage {
+    }
+}

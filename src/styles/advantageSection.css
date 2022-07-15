@@ -1,0 +1,38 @@
+/* ----------------------- ADVANTAGE SECTION ----------------------- */
+.advantage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 50px; }
+  .advantage_box {
+    width: 100%;
+    height: 220px;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .advantage_box--click {
+    background: #2A7B9B; }
+  .advantage_box--books {
+    background: #3D3D6B; }
+  .advantage_box--readers {
+    background: #00BAAD; }
+  .advantage_box--downlands {
+    background: #511849; }
+  .advantage_text {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 20px; }
+
+@media (min-width: 750px) {
+  .advantage {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .advantage_box {
+      width: 50%; } }

@@ -1,0 +1,69 @@
+/* ----------------------- ABOUT-US SECTION ----------------------- */
+.aboutUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px 60px; }
+  .aboutUs_tittle {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .aboutUs_textDecoration {
+    width: 85%;
+    max-width: 400px;
+    padding-bottom: 20px; }
+  .aboutUs_boxInformation {
+    width: 90%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .aboutUs_containerInf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; }
+  .aboutUs_textInf {
+    font-size: 24px;
+    font-family: serif;
+    font-weight: 400;
+    text-align: center; }
+  .aboutUs_img {
+    width: 250px;
+    max-width: 450px;
+    margin: 30px 0 40px; }
+
+@media (min-width: 750px) {
+  .aboutUs {
+    margin-top: 60px; }
+    .aboutUs_tittle {
+      padding-top: 60px;
+      font-size: 42px; }
+    .aboutUs_containerInf--first {
+      flex-direction: row;
+      justify-content: space-around; }
+    .aboutUs_containerInf--second {
+      flex-direction: row-reverse;
+      justify-content: space-around; }
+    .aboutUs_textInf {
+      width: 60%; }
+    .aboutUs_textInf--first {
+      text-align: start; }
+    .aboutUs_textInf--second {
+      text-align: end; }
+    .aboutUs_img {
+      margin: 0; } }
+
+@media (min-width: 1024px) {
+  .aboutUs {
+    margin-top: 0; }
+    .aboutUs_tittle {
+      padding-top: 0; } }
