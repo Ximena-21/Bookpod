@@ -8,6 +8,19 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     // align-content: center;
     align-items: center;
 }
+@mixin flex-column-flexStart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-content: center;
+    align-items: flex-start;
+}
+@mixin flex-row-spaceBetween{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @mixin button{
     padding: 10px 20px;
