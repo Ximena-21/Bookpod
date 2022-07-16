@@ -1,0 +1,64 @@
+@import "./generics.scss";
+
+.plans {
+    width: 100%;
+    @include flex-column-center();
+    padding: 50px 20px 60px;
+   
+    &_tittle {
+        width: 90%;
+        @include textTittle();
+    }
+
+    &_textDecoration{
+        @include ImgTxDecoration();
+    }
+
+    &_textPlans{
+        @include textInfo();
+    }
+
+    &_containerCards {
+        width: 90%;
+        margin-top: 50px;
+        @include flex-column-center;
+        gap: 40px;
+    }
+
+    &_card{
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        background: white;
+        padding: 40px;
+        @include flex-column-center;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+.card{
+    &_textMonth{
+        font-family: $font-text;
+        font-size: 100px;
+        font-weight: bold;
+    }
+    &_month{
+        font-family: $font-text;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    &_suscription{
+        font-family: $font-text;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+}
+
+.btn_suscription{
+    @include button;
+    border: none;
+    background: #A0B067;
+    box-shadow: rgb(0, 0, 0/35%) 0px 1px 6px;
+}

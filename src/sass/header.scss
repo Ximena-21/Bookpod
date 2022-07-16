@@ -8,7 +8,7 @@
 } */
 
 .header{
-    margin-top: 15px;
+    padding-top: 15px;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -88,12 +88,15 @@
             text-decoration: none;
             color: #323232;
         }
-
     }
 
     &_menu--hidden{
         max-height: 0px;
         
+    }
+
+    &--background {
+        background: #00BAAD;
     }
 }
 

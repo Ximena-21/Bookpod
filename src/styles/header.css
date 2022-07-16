@@ -7,7 +7,7 @@
     align-items: center;
 } */
 .header {
-  margin-top: 15px;
+  padding-top: 15px;
   width: 100%;
   position: fixed;
   z-index: 2; }
@@ -67,6 +67,8 @@
       color: #323232; }
   .header_menu--hidden {
     max-height: 0px; }
+  .header--background {
+    background: #00BAAD; }
 
 @media (min-width: 1024px) {
   .header {

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Payment</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_top">
+          <a href="#sectionHome">
+            <img src="./img/logo.png" alt="logo" class="header_logo">
+          </a>
+          <button class="header_btn"></button>
+        </div>
+        <nav class="header_menu header_menu--hidden">
+          <ul class="header_listMenu">
+            <li><a href="index.html#sectionAboutUs" class="itemMenu" id="about">QUIENES SOMOS</a></li>
+            <li><a href="index.html#sectionAdvantage" class="itemMenu" id="advantage">VENTAJAS</a></li>
+            <li><a href="index.html#sectionBooksGallery" class="itemMenu" id="books">LIBROS</a></li>
+            <li><a href="index.html#sectionPlans" class="itemMenu" id="plans">PLANES</a></li>
+            <li><a href="" class="itemMenu contact" id="contact">CONTACTANOS</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="payment">
+        <div class="payment_suscriptionContainer">
+            <div class="infSuscription_boxSuscription">
+                <img src="" alt="imgSuscription" class="imgSuscription">
+                <span class="textSuscription">Subscription X Months</span>
+            </div>
+            <div class="infSuscription_total">
+                <div class="itemTotal_subtotal">
+                    <span class="textTotal">Sub Total</span>
+                    <span class="priceTotal">$</span>
+                </div>
+                <div class="itemTotal_discount">
+                    <span class="textTotal">Descuento</span>
+                    <span class="priceTotal">$</span>
+                </div>
+                <div class="itemTotal_total">
+                    <span class="textTotal">Total</span>
+                    <span class="priceTotal">$</span>
+                </div>
+            </div>
+            <div class="infSuscription_codeDiscount">
+                <input type="text" class="inputCode">
+                <button class="btn_use">Usar</button>
+            </div>
+        </div>
+        <div class="payment_informationContainer">
+            <div class="infPayment_user">
+                <h3 class="infPayment_tittle">Informacion general</h3>
+                <div class="boxItem nameUser">
+                    <h3 class="boxItem_tittle">Nombre:</h3>
+                    <input type="text" class="boxItem_input">
+                </div>
+                <div class="boxItem idUser">
+                    <h3 class="boxItem_tittle">Identificacion:</h3>
+                    <input type="number" class="boxItem_input">
+                </div>
+                <div class="boxItem emailUser">
+                    <h3 class="boxItem_tittle">Correo:</h3>
+                    <input type="email" class="boxItem_input">
+                </div>
+            </div>
+            <div class="infPayment_creditCard">
+                <h3 class="infPayment_tittle">Medio de Pago</h3>
+                <div class="boxItem nameCreditCard">
+                    <h3 class="boxItem_tittle">Nombre:</h3>
+                    <input type="text" class="boxItem_input">
+                </div>
+                <div class="boxItem idCreditCard">
+                    <h3 class="boxItem_tittle">Numero De Tarjeta:</h3>
+                    <input type="text" class="boxItem_input">
+                </div>
+                <div class="boxItem verifyCrediCardr">
+                    <div class="verifyCard_box dateExpiration">
+                        <h3 class="boxItem_tittle">Fecha De Expiracion</h3>
+                        <div class="dateExpiration_inputBox">
+                            <input type="text" class="dateExpiration_moth">
+                            <input type="text" class="dateExpiration_year">
+                        </div>
+                    </div>
+                    <div class="verifyCard_box ccv">
+                        <h3 class="boxItem_tittle">CVV</h3>
+                        <input type="number" class="boxItem_input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment_saveInformation">
+            <input type="checkbox">
+            <h3 class="saveInformation_text">Guardar Mi Informacion Para Proximos Pagos</h3>
+        </div>
+        <button class="btn_Buy">Finalizar Compra</button>
+    </main>
+      <script src="./header.js"></script>
+</body>
+</html>

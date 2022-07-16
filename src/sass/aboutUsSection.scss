@@ -4,7 +4,6 @@
 .aboutUs{
     width: 100%;
     @include flex-column-center();
-    
     padding: 50px 20px 60px;
 
     &_tittle {

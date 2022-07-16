@@ -1,24 +1,59 @@
 // import validator from './validator.js';
-const headerBtn = document.querySelector('.header_btn')
-const headerMenu = document.querySelector('.header_menu')
+
+const plansBtn = document.querySelector('#plans')
+
+const plans = [
+    {
+        tittlePlan: "3",
+        month: "Mesess",
+        suscription: "De Suscripcion",
+        price: 9000,
+    },
+    {
+        tittlePlan: "6",
+        month: "Mesess",
+        suscription: "De Suscripcion",
+        price: 9000,
+    },
+    {
+        tittlePlan: "12",
+        month: "Mesess",
+        suscription: "De Suscripcion",
+        price: 9000,
+    }
+]
 
 
-headerBtn.addEventListener('click', toggleMenu)
+function renderPlan () {
+    
+    // let plan = plans[actualPlan]
+    const sectionPlans = document.querySelector('.plans_containerCards')
 
+    plans.forEach((plan)=>{
 
-//establecer funcion que mediante el cambio de estilos a la barra de menu lo esconda y lo muestre
-//tambien podria usar un toggle, y haciendolo con clases
-function toggleMenu () {
-    // if(headerMenu.style.display != 'block') {
-    //     headerMenu.style.display = 'block'
-    // } else {
-    //     headerMenu.style.display = 'none'
-    // }
-    headerMenu.classList.toggle('header_menu--hidden')
+        const cardBox = document.createElement('div')
+        cardBox.className = 'plans_card card'
+        
+        const contentCards = `
+            <span class="card_textMonth threeMonths">${plan.tittlePlan}</span>
+            <span class="card_month">${plan.month}</span>
+            <span class="card_suscription">${plan.suscription}</span>
+            <span class="card_suscription">${plan.price}</span>
+            <button class="btn_suscription">Suscribete</button>
+        `
+        
+        cardBox.innerHTML = contentCards
+        sectionPlans.appendChild(cardBox)  
 
-//     if (headerMenu.classList.toggle('header_menu--hidden')) {
-//         headerBtn.className = 'header_btnX'
-//     }
+        const btnSuscription = cardBox.querySelector('.btn_suscription')
+
+        btnSuscription.addEventListener('click', () => {
+            location.href = '/payment'
+        })
+    })
+    
 }
+
+renderPlan()
 
 

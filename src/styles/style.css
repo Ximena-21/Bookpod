@@ -3,6 +3,8 @@
 @import url("./aboutUsSection.css");
 @import url("./advantageSection.css");
 @import url("./booksGallerySection.css");
+@import url("./plansSection.css");
+@import url("./payment.css");
 * {
   box-sizing: border-box;
   margin: 0;
