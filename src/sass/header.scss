@@ -8,7 +8,8 @@
 } */
 
 .header{
-    padding-top: 15px;
+    padding: 15px 20px 0;
+    // padding-top: 15px;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -145,6 +146,7 @@
         border-radius: 8px;
         background-color: #D67F7F;
         padding: 10px 15px;
+        text-align: center; 
 
         &:hover{
             background-color: #c17474;  

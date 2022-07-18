@@ -7,7 +7,7 @@
     align-items: center;
 } */
 .header {
-  padding-top: 15px;
+  padding: 15px 20px 0;
   width: 100%;
   position: fixed;
   z-index: 2; }
@@ -98,7 +98,8 @@
   .contact {
     border-radius: 8px;
     background-color: #D67F7F;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    text-align: center; }
     .contact:hover {
       background-color: #c17474; }
   .itemMenu--payment {
