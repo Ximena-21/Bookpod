@@ -30,9 +30,11 @@ function validateCreditCard (creditCardNumber) {
 
   if (suma % 10 === 0 ){
       return !validate
-  } 
-
-  return validate
+    //   alert(`Se ha completado tu suscripcion`)
+  }   
+    
+    return validate
+    // alert(`Tu tarjeta no es valida`)
 
 } 
 // validateCreditCard('5558256294239457');

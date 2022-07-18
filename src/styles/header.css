@@ -43,7 +43,7 @@
     font-size: 14px;
     overflow: hidden;
     transition: all 0.4s;
-    background-color: #D67F7F; }
+    background-color: #2a7b9bf2; }
     .header_menu ul {
       width: 100%;
       list-style: none;
@@ -68,7 +68,7 @@
   .header_menu--hidden {
     max-height: 0px; }
   .header--background {
-    background: #00BAAD; }
+    background: #2a7b9b; }
 
 @media (min-width: 1024px) {
   .header {
@@ -100,4 +100,8 @@
     background-color: #D67F7F;
     padding: 10px 15px; }
     .contact:hover {
-      background-color: #c17474; } }
+      background-color: #c17474; }
+  .itemMenu--payment {
+    color: #D67F7F; }
+  .itemMenu--contact {
+    color: white; } }

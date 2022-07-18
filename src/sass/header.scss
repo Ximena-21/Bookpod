@@ -58,7 +58,7 @@
     
         transition: all 0.4s;
     
-        background-color: #D67F7F;
+        background-color: #2a7b9bf2;
 
         ul {
             width: 100%;
@@ -91,12 +91,11 @@
     }
 
     &_menu--hidden{
-        max-height: 0px;
-        
+        max-height: 0px; 
     }
 
     &--background {
-        background: #00BAAD;
+        background: #2a7b9b;
     }
 }
 
@@ -152,6 +151,17 @@
         }
 
     }
-}
 
+    .itemMenu {
 
+        &--payment{
+            color:#D67F7F;
+        }
+        
+        &--contact{
+            color: white;
+        }
+    }
+    
+
+}   
