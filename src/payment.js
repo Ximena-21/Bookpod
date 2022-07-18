@@ -1,78 +1,51 @@
 import validator from './validator.js';
-
-/* // const headerBtn = document.querySelector('.headerBtn')
-// const headerMenu = document.querySelector('.headerMenu')
-// headerBtn.addEventListener('click', toggleMenu)
-
-// function toggleMenu () {
     
-    //     headerMenu.classList.toggle('headerMenu--hidden')
-    // } */
-    
-    const plansSuscription = JSON.parse(localStorage.getItem('plansSuscription'))
-    console.log(plansSuscription)
-    
-    // const plan = plansSuscription[0].tittlePlan
-    // console.log(plan)
-    
-    const textSuscription = document.querySelector('.textSuscription')
-    textSuscription.textContent = `Suscripcion Por ${plansSuscription.tittlePlan} Meses`
-    
-    
-    
-    
-    
-    // const textSubtotal = document.querySelector('.subTotal')
-    // const textTotal = document.querySelector('.total')
-    
-    
+const selectedPlan = JSON.parse(localStorage.getItem('selectedPlan'))
+console.log(selectedPlan)
 const btnUseCode = document.querySelector('.btn_use')
-
-const codeDescount = [ 
-    {code: 'laboratoria2022', descount: 12990},
-    {code: 'BOG005', descount: 9990},
-    {code: 'l4b0r4tor14', descount: 21990},
+const textSubtotal = document.querySelector('.subTotal')
+const textTotal = document.querySelector('.total')
+const textDescount = document.querySelector('.descount')
+const textSuscription = document.querySelector('.textSuscription')
+textSuscription.textContent = `Suscripcion Por ${selectedPlan.tittlePlan} Meses`
     
-]
+
+const codeDescount = {
+    laboratoria2022: 12990,
+    BOG005: 9990,
+    l4b0r4tor14: 21990,
+}
+    
 
 
-// const plan = localStorage.getItem('plan')
-// const priceSubTotal = localStorage.getItem('subTotal')
-// // console.log(plan,priceSubTotal)
+calcCart()
+function calcCart () {
+    
+    const priceSuscription =  selectedPlan.price
+    const discountValue = useCode()
 
-// textSubtotal.textContent = `$ ${priceSubTotal}`
+    const total = priceSuscription - discountValue
+    
+    textTotal.textContent = `$ ${total}`
+    textSubtotal.textContent = `$ ${priceSuscription}`
+    textDescount.textContent = `$ ${discountValue}`
 
+}
 
-btnUseCode.addEventListener('click', descount)
-
+btnUseCode.addEventListener('click', calcCart)
 //funcion que ejecuta el codigo de descuento
-function descount () {
+function useCode () {
     
     const inputCode = document.querySelector('.input_code')
     const descount = inputCode.value
-    const textDescount = document.querySelector('.descount')
+    
 
-    let valueCodeUse = codeDescount.find((element)=>{
-        if (element.code == descount ) {
-
-            const valueDescount = element.descount
-            return valueDescount
-        }
-    })
+    let valueCodeUse =  codeDescount[descount] 
     
-    valueCodeUse = valueCodeUse.descount
-    textDescount.textContent = `$ ${valueCodeUse}`
     
-   /*  function total () {
+    return valueCodeUse || 0
     
-        const total = priceSubTotal - valueCodeUse
-    
-        textTotal.textContent = `$ ${total}`
-    } */
 }
-
-
-
 
 
 //VALIDACION TARJETA
@@ -95,30 +68,37 @@ function checkOut () {
     
     pagePayment.appendChild(msmValidate)
 
+    const maskNumber = validator.maskify(cardNumber)
+
+    inputCreditCard.value = maskNumber
+
     if(validate == true) {
         paymentContainer.classList.add('payment--opacity')
-        msmValidate.textContent = `Se Ha Cmpletado Tu Suscripcion`
+        msmValidate.textContent = `Se Ha Completado Tu Suscripcion, De La Tarjeta No. ${maskNumber}`
     } else {
         paymentContainer.classList.add('payment--opacity')
-        msmValidate.textContent = `Tu Tarjeta No Es Valida`
+        msmValidate.textContent = `Tu Tarjeta No. ${maskNumber} no Es Valida`
     }
+
+
 }
 
-inputCreditCard.addEventListener('blur',hideDigits, true)
 
-function hideDigits (evento) {
+
+/* // inputCreditCard.addEventListener('keydown',hideDigits)
+btnFinalizar.addEventListener('click',hideDigits)
+
+function hideDigits () {
     let cardNumber = inputCreditCard.value
-
-    if (evento.key === 'Enter') {
         
-        let maskNumber = validator.maskify(cardNumber)
-        cardNumber = maskNumber
+    const maskNumber = validator.maskify(cardNumber)
+    // cardNumber = maskNumber
+    console.log(maskNumber)
+    // inputCreditCard.write('cambiar los digito')
 
-        //  return maskNumber
-        console.log(cardNumber)
-        // return validator.maskify(cardNumber)
-    }
+    //  return maskNumber
+    // return validator.maskify(cardNumber)
 }    
-
+ */
 
 

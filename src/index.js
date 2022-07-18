@@ -51,9 +51,11 @@ function renderPlan () {
         const btnSuscription = cardBox.querySelector('.btn_suscription')
 
         btnSuscription.addEventListener('click', () => {
+           
+            localStorage.setItem('selectedPlan', JSON.stringify(plan))
             location.href = '/payment'
             // const planSelect = evento.parentElement
-            // console.log(evento)
+            // console.log(plan)
         })
 
         // const selectPlan = plan.tittlePlan
@@ -68,5 +70,5 @@ function renderPlan () {
 renderPlan()
 
 
-localStorage.setItem('plansSuscription', JSON.stringify(plans))
+// localStorage.setItem('plansSuscription', JSON.stringify(plans))
 

@@ -54,51 +54,53 @@
                     </div>
                 </div>
             </div>
-            <div class="payment_informationContainer">
-                <div class="payment_infPayment">
-                    <h3 class="text infPayment_tittle">Informacion general</h3>
-                    <div class="boxItem nameUser">
-                        <h3 class="text boxItem_tittle">Nombre:</h3>
-                        <input type="text" class="input boxItem_input">
+            <form>
+                <div class="payment_informationContainer">
+                    <div class="payment_infPayment">
+                        <h3 class="text infPayment_tittle">Informacion general</h3>
+                        <div class="boxItem nameUser">
+                            <h3 class="text boxItem_tittle">Nombre:</h3>
+                            <input required type="text" class="input boxItem_input">
+                        </div>
+                        <div class="boxItem idUser">
+                            <h3 class="text boxItem_tittle">Identificacion:</h3>
+                            <input type="number" class="input boxItem_input">
+                        </div>
+                        <div class="boxItem emailUser">
+                            <h3 class="text boxItem_tittle">Correo:</h3>
+                            <input type="email" class="input boxItem_input">
+                        </div>
                     </div>
-                    <div class="boxItem idUser">
-                        <h3 class="text boxItem_tittle">Identificacion:</h3>
-                        <input type="number" class="input boxItem_input">
-                    </div>
-                    <div class="boxItem emailUser">
-                        <h3 class="text boxItem_tittle">Correo:</h3>
-                        <input type="email" class="input boxItem_input">
-                    </div>
-                </div>
-                <div class="payment_infPayment"> 
-                    <h3 class="text infPayment_tittle">Medio de Pago</h3>
-                    <div class="boxItem nameCreditCard">
-                        <h3 class="text boxItem_tittle">Nombre:</h3>
-                        <input type="text" class="input boxItem_input">
-                    </div>
-                    <div class="boxItem idCreditCard">
-                        <h3 class="text boxItem_tittle">Numero De Tarjeta:</h3>
-                        <input type="text" class="input boxItem_input inputCreditCar">
-                    </div>
-                    <div class="boxItem verifyCreditCard">
-                        <div class="verifyCreditCard_boxDate dateExpiration">
-                            <h3 class="text boxItem_tittle">Fecha De Expiracion</h3>
-                            <div class="input input_dateExpiration">
-                                <input type="text" class="input_month">
-                                <input type="text" class="input_year">
+                    <div class="payment_infPayment"> 
+                        <h3 class="text infPayment_tittle">Medio de Pago</h3>
+                        <div class="boxItem nameCreditCard">
+                            <h3 class="text boxItem_tittle">Nombre:</h3>
+                            <input type="text" class="input boxItem_input">
+                        </div>
+                        <div class="boxItem idCreditCard">
+                            <h3 class="text boxItem_tittle">Numero De Tarjeta:</h3>
+                            <input type="text" class="input boxItem_input inputCreditCar">
+                        </div>
+                        <div class="boxItem verifyCreditCard">
+                            <div class="verifyCreditCard_boxDate dateExpiration">
+                                <h3 class="text boxItem_tittle">Fecha De Expiracion</h3>
+                                <div class="input input_dateExpiration">
+                                    <input type="text" class="input_month">
+                                    <input type="text" class="input_year">
+                                </div>
+                            </div>
+                            <div class="verifyCreditCard_boxCcv">
+                                <h3 class="text boxItem_tittle">CVV</h3>
+                                <input type="number" class="input">
                             </div>
                         </div>
-                        <div class="verifyCreditCard_boxCcv">
-                            <h3 class="text boxItem_tittle">CVV</h3>
-                            <input type="number" class="input">
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="payment_saveInformation">
-                <input type="checkbox">
-                <h3 class="text saveInformation_text">Guardar Mi Informacion Para Proximos Pagos</h3>
-            </div>
+                <div class="payment_saveInformation">
+                    <input type="checkbox">
+                    <h3 class="text saveInformation_text">Guardar Mi Informacion Para Proximos Pagos</h3>
+                </div>
+            </form>
             <div class="payment_boxButton">
                 <button class="btn btn_buy">Finalizar Compra</button>
             </div>
