@@ -67,6 +67,8 @@
       color: #323232; }
   .header_menu--hidden {
     max-height: 0px; }
+  .header--payment {
+    backdrop-filter: blur(15px); }
   .header--background {
     background: #2a7b9b; }
 
@@ -95,14 +97,14 @@
         color: #ffffff; }
     .header_btn {
       display: none; }
+    .header .itemMenu--payment {
+      color: #D67F7F; }
+    .header .itemMenu--contact {
+      color: white; }
   .contact {
     border-radius: 8px;
     background-color: #D67F7F;
     padding: 10px 15px;
     text-align: center; }
     .contact:hover {
-      background-color: #c17474; }
-  .itemMenu--payment {
-    color: #D67F7F; }
-  .itemMenu--contact {
-    color: white; } }
+      background-color: #c17474; } }

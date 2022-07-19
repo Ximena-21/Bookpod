@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Payment</title>
 </head>
+
 <body class="body">
-    <header class="header">
+
+    <header class="header header--payment">
         <div class="header_top">
-          <a href="#sectionHome">
+          <a href="index.html#sectionHome">
             <img src="./img/logo.png" alt="logo" class="header_logo">
           </a>
           <button class="header_btn"></button>
@@ -20,13 +22,16 @@
             <li><a href="index.html#sectionAboutUs" class="itemMenu itemMenu--payment" id="about">QUIENES SOMOS</a></li>
             <li><a href="index.html#sectionAdvantage" class="itemMenu itemMenu--payment" id="advantage">VENTAJAS</a></li>
             <li><a href="index.html#sectionBooksGallery" class="itemMenu itemMenu--payment" id="books">LIBROS</a></li>
-            <li><a href="index.html#sectionPlans" class="itemMenu headerPayment" id="plans">PLANES</a></li>
+            <li><a href="index.html#sectionPlans" class="itemMenu itemMenu--payment" id="plans">PLANES</a></li>
             <li><a href="" class="itemMenu contact itemMenu--contact" id="contact">CONTACTANOS</a></li>
           </ul>
         </nav>
       </header>
+
     <main class="payment">
+
         <div class="payment_container">
+
             <div class="payment_suscriptionContainer suscription">
                 <div class="suscription_boxInfo">
                     <img src="" alt="imgSuscription" class="imgSuscription">
@@ -54,60 +59,65 @@
                     </div>
                 </div>
             </div>
-            <form>
+
+            <form id="form">
                 <div class="payment_informationContainer">
                     <div class="payment_infPayment">
                         <h3 class="text infPayment_tittle">Informacion general</h3>
                         <div class="boxItem nameUser">
-                            <h3 class="text boxItem_tittle">Nombre:</h3>
-                            <input required type="text" class="input boxItem_input">
+                            <label for="name" class="text boxItem_tittle">Nombre:</label>
+                            <input id="name" name="name" required type="text" class="input boxItem_input">
                         </div>
                         <div class="boxItem idUser">
                             <h3 class="text boxItem_tittle">Identificacion:</h3>
-                            <input type="number" class="input boxItem_input">
+                            <input name='identification' required type="number" class="input boxItem_input">
                         </div>
                         <div class="boxItem emailUser">
                             <h3 class="text boxItem_tittle">Correo:</h3>
-                            <input type="email" class="input boxItem_input">
+                            <input name='email' required type="email" class="input boxItem_input">
                         </div>
                     </div>
                     <div class="payment_infPayment"> 
                         <h3 class="text infPayment_tittle">Medio de Pago</h3>
                         <div class="boxItem nameCreditCard">
                             <h3 class="text boxItem_tittle">Nombre:</h3>
-                            <input type="text" class="input boxItem_input">
+                            <input name='cardName' required type="text" class="input boxItem_input">
                         </div>
                         <div class="boxItem idCreditCard">
                             <h3 class="text boxItem_tittle">Numero De Tarjeta:</h3>
-                            <input type="text" class="input boxItem_input inputCreditCar">
+                            <input name='cardNumber' pattern="^[0-9]{14,17}$" required type="text" class="input boxItem_input inputCreditCar">
                         </div>
                         <div class="boxItem verifyCreditCard">
                             <div class="verifyCreditCard_boxDate dateExpiration">
                                 <h3 class="text boxItem_tittle">Fecha De Expiracion</h3>
                                 <div class="input input_dateExpiration">
-                                    <input type="text" class="input_month">
-                                    <input type="text" class="input_year">
+                                    <input name='dateExpirationMonth' pattern="^[0-9]{2}$" minlength="2" maxlength="2" required type="text" class="input_month">
+                                    <span>/</span>
+                                    <input name='dateExpirationYear' pattern="^[0-9]{2}$" minlength="2" maxlength="2" required type="text" class="input_year">
                                 </div>
                             </div>
                             <div class="verifyCreditCard_boxCcv">
                                 <h3 class="text boxItem_tittle">CVV</h3>
-                                <input type="number" class="input">
+                                <input name='cvv' min="100" max="999" required type="number" class="input">
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="payment_saveInformation">
-                    <input type="checkbox">
+                    <input name="saveInformation" type="checkbox">
                     <h3 class="text saveInformation_text">Guardar Mi Informacion Para Proximos Pagos</h3>
                 </div>
+                <div class="payment_boxButton">
+                    <button class="btn btn_buy">Finalizar Compra</button>
+                </div>
             </form>
-            <div class="payment_boxButton">
-                <button class="btn btn_buy">Finalizar Compra</button>
-            </div>
+            
+            
         </div>
+
     </main>
       <script src="./header.js" type="module"></script>
       <script src="./payment.js" type="module"></script>
-
 </body>
 </html>

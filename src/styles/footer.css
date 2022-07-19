@@ -13,13 +13,13 @@
     padding: 15px;
     gap: 5px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
   .footerContainer--nav {
     display: flex; }
   .footerContainer li {
-    width: 100%;
     font-family: sans-serif;
     font-weight: 500;
     font-size: 12px;

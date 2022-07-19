@@ -95,6 +95,10 @@
         max-height: 0px; 
     }
 
+    &--payment{
+        backdrop-filter: blur(15px);
+    }
+
     &--background {
         background: #2a7b9b;
     }
@@ -139,6 +143,17 @@
         &_btn {
             display: none;
         }
+
+        .itemMenu {
+
+            &--payment{
+                color:#D67F7F;
+            }
+            
+            &--contact{
+                color: white;
+            }
+        }
     }
 
     //esto no lo he guardado en main ni en el header
@@ -154,16 +169,7 @@
 
     }
 
-    .itemMenu {
-
-        &--payment{
-            color:#D67F7F;
-        }
-        
-        &--contact{
-            color: white;
-        }
-    }
+   
     
 
 }   

@@ -18,36 +18,38 @@
 .input{
     width: 100%;
     // max-width: 600px;
-    padding: 5px 20px;
+    padding: 6px 15px;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #4f5052;
+    outline: none;
 
     &_code{
         width: 70%;
         // max-width: 200px;
     }
 
-    &_month{
+    & input {
         position: relative;
         border: none;
         width: 50%;
+        text-align: center;
+        outline: none;
     }
+   /*  &_month{
+        position: relative;
+        border: none;
+        width: 50%;
+        text-align: center;
+    } */
 
-    &_month::after{
-        content: '/';
-        position: absolute;
-        left: 50%;
-        margin-left: -4px;
-        color: #aaa;
-    }
-
-    &_year{
+   /*  &_year{
         border: 0;
         width: 50%;
         outline: none;
         appearance: none;
-    }
+        text-align: center;
+    } */
 
     &_dateExpiration {
         display: flex;
@@ -61,6 +63,10 @@
     width: 100%;
     padding-top: 70px;
     @include flex-column-center();
+
+    & #form{
+        width: 90%;
+    }
 
     &_container{
         width: 90%;
@@ -76,6 +82,12 @@
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             
         }
+
+        & img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
     }
 
     &_suscriptionContainer{
@@ -85,7 +97,7 @@
     }
     
     &_informationContainer{
-        width: 90%;
+        width: 100%;
         padding-top: 20px;
         gap: 20px;
         display: flex;
@@ -171,6 +183,10 @@
 
     &_boxCcv{
         width: 20%;
+
+        & input{
+            padding: 6px;
+        }
     }
 
     &_boxDate{

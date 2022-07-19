@@ -8,27 +8,32 @@
 
 .input {
   width: 100%;
-  padding: 5px 20px;
+  padding: 6px 15px;
   margin-top: 10px;
   border-radius: 5px;
-  border: 1px solid #4f5052; }
+  border: 1px solid #4f5052;
+  outline: none;
+  /*  &_month{
+        position: relative;
+        border: none;
+        width: 50%;
+        text-align: center;
+    } */
+  /*  &_year{
+        border: 0;
+        width: 50%;
+        outline: none;
+        appearance: none;
+        text-align: center;
+    } */ }
   .input_code {
     width: 70%; }
-  .input_month {
+  .input input {
     position: relative;
     border: none;
-    width: 50%; }
-  .input_month::after {
-    content: '/';
-    position: absolute;
-    left: 50%;
-    margin-left: -4px;
-    color: #aaa; }
-  .input_year {
-    border: 0;
     width: 50%;
-    outline: none;
-    appearance: none; }
+    text-align: center;
+    outline: none; }
   .input_dateExpiration {
     display: flex;
     flex-direction: row; }
@@ -40,6 +45,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .payment #form {
+    width: 90%; }
   .payment_container {
     width: 90%;
     max-width: 800px;
@@ -52,6 +59,10 @@
     @media (min-width: 400px) {
       .payment_container {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; } }
+    .payment_container img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain; }
   .payment_suscriptionContainer {
     width: 80%;
     padding-top: 40px;
@@ -60,7 +71,7 @@
     justify-content: center;
     align-items: center; }
   .payment_informationContainer {
-    width: 90%;
+    width: 100%;
     padding-top: 20px;
     gap: 20px;
     display: flex;
@@ -130,6 +141,8 @@
   justify-content: space-between; }
   .verifyCreditCard_boxCcv {
     width: 20%; }
+    .verifyCreditCard_boxCcv input {
+      padding: 6px; }
   .verifyCreditCard_boxDate {
     width: 40%; }
 
