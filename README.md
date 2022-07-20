@@ -4,9 +4,9 @@
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Objetivos de aprendizaje](#2-objetivos-de-aprendizaje)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
-* [5. Pistas, tips y lecturas complementarias](#5-pistas-tips-y-lecturas-complementarias)
+* [3. Consideraciones generales](#3-Proceso-Creativo)
+* [4. Criterios de aceptación mínimos del proyecto](#4-Pre-requisitos)
+* [5. Pistas, tips y lecturas complementarias](#5-Demo)
 
 ***
 
@@ -25,6 +25,8 @@ una  pagina de pago donde se realizaria la validacion del pago.
 
 La pagina se construyo a partir del uso de  HTML, CSS y JavaScript como tecnologías.
 
+![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+
 
 ## 2. Objetivos de aprendizaje
 
@@ -32,154 +34,101 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [x] **Uso de HTML semántico**
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
-
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- [x] **Uso de selectores de CSS**
+- [x] **Modelo de caja (box model): borde, margen, padding**
 
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
-
-
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
-
-
-- [ ] **Manipulación dinámica del DOM**
+- [x] **Uso de selectores del DOM**
+- [x] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [x] **Manipulación dinámica del DOM**
 
 
 ### JavaScript
 
-- [ ] **Tipos de datos primitivos**
-
-- [ ] **Strings (cadenas de caracteres)**
-
-- [ ] **Variables (declaración, asignación, ámbito)**
-
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
-
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
-
-- [ ] **Funciones (params, args, return)**
-
-- [ ] **Pruebas unitarias (unit tests)**
-
-- [ ] **Módulos de ECMAScript (ES Modules)**
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+- [x] **Tipos de datos primitivos**
+- [x] **Strings (cadenas de caracteres)**
+- [x] **Variables (declaración, asignación, ámbito)**
+- [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [x] **Uso de bucles/ciclos (while, for, for..of)**
+- [x] **Funciones (params, args, return)**
+- [x] **Pruebas unitarias (unit tests)**
+- [x] **Módulos de ECMAScript (ES Modules)**
+- [x] **Uso de linter (ESLINT)**
+- [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
-
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-
-- [ ] **GitHub: Despliegue con GitHub Pages**
+- [x] **Git: Instalación y configuración**
+- [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [x] **GitHub: Despliegue con GitHub Pages**
 
 ### user-centricity
 
-- [ ] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
+- [x] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
 
 ### product-design
 
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
-
-- [ ] **Seguir los principios básicos de diseño visual**
+- [x] **Crear prototipos de alta fidelidad que incluyan interacciones**
+- [x] **Seguir los principios básicos de diseño visual**
 
 ## 3. Proceso Creativo
 
-### Prototipo de alta fidelidad
+### Prototipo de baja fidelidad
 
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
+<table>
+    <tr>
+        <td>Landing Page / Inicio</td>
+        <td>Landing Page / Quienes somos</td>
+    </tr>
+    <tr>
+        <td><img src="tbajaFidelidad1.png" width=500 ></td>
+    </tr>
+    <tr>
+        <td>Landing Page / Ventajas</td>
+        <td>Landing Page / Libros</td>
+    </tr>
+    <tr>
+        <td><img src="tbajaFidelidad2.png" width=500 ></td>
+    </tr>
+    <tr>
+        <td>Landing Page / Planes</td>
+        <td>Landing Page / Footer</td>
+    </tr>
+    <tr>
+        <td><img src="tbajaFidelidad3.png" width=500 ></td>
+    </tr>
+ </table>
 
-## 5. Criterios de aceptación mínimos del proyecto
+ ### Prototipo de alta fidelidad
 
-Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].
-
-### Definición del producto
-
-En el `README.md`, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
-
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-### Interfaz de usuario (UI)
-
-La interfaz debe permitir al usuario:
-
-* Insertar el número que queremos validar.
-* Ver el resultado si es válido o no.
-* Ocultar todos los dígitos de su número de tarjeta menos los últimos
-4 caracteres.
-* No debe poder ingresar un campo vacío.
-
-### UX (Diseño de experiencia de usuario)
-
-Antes de iniciar a codear, debes entender el problema que quieres solucionar y
-cómo tu aplicación lo soluciona.
-
-* Trabaja tu primer prototipo con papel y lápiz (blanco y negro).
-* Luego valida esta solución con una compañera (pedir feedback).
-* Toma lo aprendido al momento de validar tu primer prototipo y desarrolla un
-  nuevo prototipo usando alguna herramienta para diseño de prototipos
-  ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/),
-  [Google Slides](https://www.google.com/intl/es/slides/about/), etc.)
-Estos puntos los presentarás en el `README.md`.
+  #### Figam del proyecto
+  
+  [REPO](https://www.figma.com/file/Rqf9q5jEtwQEcv2wGg6kLz/BookPod?node-id=0%3A1)
 
 
-##### `README.md`
+## 4. Pre-requisitos
+_Necesario `npm`_
 
-Debe contener lo siguiente:
+```
+npm install -g sass
+```
 
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
+# 5. Demo 
 
+* deploy del proyecto [DEPLOY](https://bookpodd.netlify.app/)
+* repositorio del proyecto [REPO](https://github.com/Ximena-21/cardValidation)
+* Figma del proyecto [REPO](https://www.figma.com/file/Rqf9q5jEtwQEcv2wGg6kLz/BookPod?node-id=0%3A1)
 
-Diseño de experiencia de usuario (User Experience Design):
+# 6. Autores 
 
-* Ideación
-* Prototipado (sketching)
-* Testeo e Iteración
+_Proyecto desarrollado por:_
 
-Desarrollo Front-end:
+* **Paula Ximena Anzola** - *Ingeniera ambiental* - [proyectos](https://github.com/Ximena-21)
 
-* Valores
-* Tipos
-* Variables
-* Control de flujo
-* Tests unitarios
-* [Documentación de NPM](https://docs.npmjs.com/)
-
-Organización del Trabajo:
-
-* [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
-* [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
-  esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
-  poco a lo largo del -_bootcamp_.
-* [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
-
-Únete al canal de Slack **#project-card-validation**
