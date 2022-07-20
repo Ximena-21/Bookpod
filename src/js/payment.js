@@ -1,4 +1,4 @@
-import validator from './validator.js';
+import validator from '../validator.js';
     
 const selectedPlan = JSON.parse(localStorage.getItem('selectedPlan'))
 // console.log(selectedPlan)
@@ -51,10 +51,10 @@ function useCode () {
 
 
 //VALIDACION TARJETA
-const btnFinalizar = document.querySelector('.btn_buy')
+// const btnFinalizar = document.querySelector('.btn_buy')
 const inputCreditCard = document.querySelector('.inputCreditCar')
 const form = document.querySelector('#form')
-const inputs = form.querySelectorAll('input')
+// const inputs = form.querySelectorAll('input')
 
 
 //informacion previa de mi usuario

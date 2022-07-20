@@ -1,6 +1,9 @@
 // import validator from './validator.js';
 
-// const plansBtn = document.querySelector('#plans')
+// const btnHomeSuscription = document.querySelector('.btn_home')
+// btnHomeSuscription.addEventListener('click', () => {
+
+// })
 
 const plans = [
     {
@@ -41,7 +44,7 @@ function renderPlan () {
             <span class="card_textMonth threeMonths">${plan.tittlePlan}</span>
             <span class="card_month">${plan.month}</span>
             <span class="card_suscription">${plan.suscription}</span>
-            <span class="card_suscription">$ ${plan.price}</span>
+            <span class="card_price">$ ${plan.price}</span>
             <button class="btn_suscription">Suscribirme</button>
         `
         
@@ -53,7 +56,7 @@ function renderPlan () {
         btnSuscription.addEventListener('click', () => {
            
             localStorage.setItem('selectedPlan', JSON.stringify(plan))
-            location.href = '/payment'
+            location.href = '../pages/payment'
             // const planSelect = evento.parentElement
             // console.log(plan)
         })

@@ -27,7 +27,8 @@
         text-align: center;
     } */ }
   .input_code {
-    width: 70%; }
+    width: 70%;
+    min-width: 120px; }
   .input input {
     position: relative;
     border: none;
@@ -126,7 +127,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 60px; }
+  gap: 30px; }
 
 .itemTotal {
   display: flex;
@@ -153,7 +154,8 @@
   padding: 10px 40px;
   margin-bottom: 20px;
   border-radius: 5px;
-  color: white; }
+  color: white;
+  cursor: pointer; }
   .btn_use {
     max-width: 180px;
     margin-bottom: 0; }

@@ -22,34 +22,30 @@
 
     &_containerBooks{
         width: 90%;
-        // height: 360px;
-        gap: 10px;
         margin-top: 50px;
     }
     
     &_books-carrusel{
         display: flex;
+        gap: 30px;
+        padding-bottom: 20px;
         overflow-x: scroll;
         flex-direction: row;
-        gap: 10px;
-        // scrollbar-width: none;
-        // cursor: pointer;
-        // scrollbar-width: none;
-        // scroll-behavior: smooth;
     }
 
     &_boxImgBooks{
-        // transform-origin: center left;
+        width: 100%;
     }
 
     &_imgBooks{
-        width: 120px;
-        max-width: 250px;
-        height: 180px;
+        width: auto;
         max-height: 320px;
-        // padding: 0;
-        // width: 120px;
+        border-radius: 5px;
     }
+}
+
+.book8{
+    height: 320px;
 }
 
 // .bookGallery_containerBooks::-webkit-scrollbar {
