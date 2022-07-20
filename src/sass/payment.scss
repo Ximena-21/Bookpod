@@ -209,6 +209,7 @@
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
     border-radius: 5px;
     color: #fdfdfd;
     font-family: sans-serif;
@@ -227,13 +228,24 @@
         align-items: center;
         border-radius: 5px;
     }
+
+    &_boxHeader {
+        width: 100%;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: start;
+        background: #d17171;
+    }
+
+    &_text{
+        padding: 0px 30px 50px;
+        color: #4a4949; 
+    }
 }
 
-//    width: 100%;
-// padding: 20px 15px;
-// text-align: start;
-// background: #d17171;
-// }
+.btnClose {
+    cursor: pointer;
+}
 
-// padding: 0px 20px 40px;
-// color: #4a4949;

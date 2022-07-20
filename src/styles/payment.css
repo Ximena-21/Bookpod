@@ -159,6 +159,7 @@
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
   color: #fdfdfd;
   font-family: sans-serif;
@@ -175,3 +176,17 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 5px; }
+  .msgValidate_boxHeader {
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    background: #d17171; }
+  .msgValidate_text {
+    padding: 0px 30px 50px;
+    color: #4a4949; }
+
+.btnClose {
+  cursor: pointer; }
