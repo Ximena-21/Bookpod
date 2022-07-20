@@ -5,21 +5,21 @@ const plans = [
         month: "Mesess",
         suscription: "De Suscripcion",
         price: 79990,
-        url: 'img/imgSuscription.jpg',
+        url: '../img/imgSuscription.jpg',
     },
     {
         tittlePlan: "6",
         month: "Mesess",
         suscription: "De Suscripcion",
         price: 137990,
-        url: 'img/imgSuscription.jpg',
+        url: '../img/imgSuscription.jpg',
     },
     {
         tittlePlan: "12",
         month: "Mesess",
         suscription: "De Suscripcion",
         price: 239990,
-        url: 'img/imgSuscription.jpg',
+        url: '../img/imgSuscription.jpg',
     }
 ]
 

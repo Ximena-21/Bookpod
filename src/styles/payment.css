@@ -12,20 +12,7 @@
   margin-top: 10px;
   border-radius: 5px;
   border: 1px solid #4f5052;
-  outline: none;
-  /*  &_month{
-        position: relative;
-        border: none;
-        width: 50%;
-        text-align: center;
-    } */
-  /*  &_year{
-        border: 0;
-        width: 50%;
-        outline: none;
-        appearance: none;
-        text-align: center;
-    } */ }
+  outline: none; }
   .input_code {
     width: 70%;
     min-width: 120px; }
@@ -61,8 +48,7 @@
       .payment_container {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; } }
     .payment_container img {
-      width: 30px;
-      height: 30px;
+      width: 50px;
       object-fit: contain; }
   .payment_suscriptionContainer {
     width: 80%;
@@ -104,7 +90,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  gap: 30px; }
 
 .suscription_total {
   width: 100%;
