@@ -46,6 +46,7 @@ $font-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 @mixin ImgTxDecoration {
     width: 80%;
     max-width: 400px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    margin-bottom: 60px;
 }
 

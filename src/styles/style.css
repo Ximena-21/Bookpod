@@ -26,7 +26,7 @@ main > img {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 3px; }
+  height: 5px; }
 
 /* Track */
 ::-webkit-scrollbar-track {

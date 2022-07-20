@@ -4,7 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px 60px; }
+  padding: 50px 20px 60px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto; }
   .bookGallery_tittle {
     padding: 10px 0;
     font-size: 25px;
@@ -14,13 +17,14 @@
   .bookGallery_textDecoration {
     width: 80%;
     max-width: 400px;
-    padding-bottom: 20px; }
+    margin-bottom: 60px; }
   .bookGallery_textBooks {
     width: 90%;
     font-size: 16px;
     font-family: serif;
     font-weight: 400;
-    text-align: center; }
+    text-align: center;
+    max-width: 1200px; }
   .bookGallery_containerBooks {
     width: 90%;
     margin-top: 50px; }
@@ -34,7 +38,7 @@
     width: 100%; }
   .bookGallery_imgBooks {
     width: auto;
-    max-height: 320px;
+    max-height: 280px;
     border-radius: 5px; }
 
 .book8 {

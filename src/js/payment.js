@@ -75,10 +75,10 @@ const nameInput = form.querySelector('[name=name]') //nombre
 nameInput.value = formData.name || ""
 
 const identificationInput = form.querySelector('[name=identification]') //identificacion
-identificationInput.value = formData.identification
+identificationInput.value = formData.identification || ''
 
 const emailInput = form.querySelector('[name=email]') //email
-emailInput.value = formData.email
+emailInput.value = formData.email || ''
 
 
 //al formulario le asganmos el evento submit(enviar), la funcion para validar y enmascarar el numero de la tarjeta
@@ -112,36 +112,62 @@ function checkOut (event) {
         const cardNumber = inputCreditCard.value
         let validate = validator.isValid(cardNumber)
        
-        const pagePayment = document.querySelector('.payment')
-        const paymentContainer = document.querySelector('.payment_container')
-        
-        //se crea un div para guardar el mensaje de validacion
-        const msmValidate = document.createElement('div')
-        msmValidate.className = 'msmValidate_box'
-        // const btnClose = document.createElement('button')
-        // btnClose.className = 'btn_close'
-        // msmValidate.appendChild(btnClose)
-        
-        pagePayment.appendChild(msmValidate)
-        
-        //........ENMASCARAMOS EL NUMERO DE LA TARJETA........//
-        const maskNumber = validator.maskify(cardNumber)
-        
-        inputCreditCard.value = maskNumber
-        
-        if(validate == true) {
-            paymentContainer.classList.add('payment--opacity')
-            msmValidate.textContent = `Se Ha Completado Tu Suscripcion, De La Tarjeta No. ${maskNumber}`
-        } else {
-            paymentContainer.classList.add('payment--opacity')
-            msmValidate.textContent = `Tu Tarjeta No. ${maskNumber} no Es Valida`
-        }
+        renderMessageCardPayment(cardNumber,validate)
         
         
     }
+
     
+function renderMessageCardPayment(cardNumber, validate){
     
-    
+        const maskNumber = validator.maskify(cardNumber)
+        const pagePayment = document.querySelector('.payment')
+        // const paymentContainer = document.querySelector('.payment_container')
+        
+        //se crea un div para guardar el mensaje de validacion
+        const msgValidate = document.createElement('div')
+        msgValidate.className = 'msmgalidate'
+        
+
+
+        const title = validate ? 'Payment Sucessfull' : 'Error'
+
+        const message = validate ? `Se Ha Completado Tu Suscripcion, De La Tarjeta No. ${maskNumber}` : `Tu Tarjeta No. ${maskNumber} no Es Valida`
+
+        msgValidate.innerHTML = `
+            <div>
+                <div class='msgValidate_box'>${title}</div>
+                <p class='msgValidate_text'>${message}</p>
+            </div>
+        `
+
+        // function removeMessage () {
+
+        //     // msgValidate.remove
+        //     //
+        // }
+
+
+        // const btnClose = document.createElement('button')
+        // btnClose.className = 'btn_close'
+        // msgValidate.appendChild(btnClose)
+        
+        pagePayment.appendChild(msgValidate)
+        
+        
+        //........ENMASCARAMOS EL NUMERO DE LA TARJETA........//
+        
+        // inputCreditCard.value = maskNumber
+        
+        // if(validate == true) {
+        //     paymentContainer.classList.add('payment--opacity')
+        //     msgValidate.textContent = `Se Ha Completado Tu Suscripcion, De La Tarjeta No. ${maskNumber}`
+        // } else {
+        //     paymentContainer.classList.add('payment--opacity')
+        //     msgValidate.textContent = `Tu Tarjeta No. ${maskNumber} no Es Valida`
+        // }
+}
+
 //.................MANERA DINAMICA DE GUARDAR LA INFORMACION DEL FORMULARIO << R E V I Z A R >>...........
    
    // // convertir el objeto en una lista [ [key,value ], [key,value ]]

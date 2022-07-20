@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px 60px; }
+  padding: 50px 20px; }
   .plans_tittle {
     width: 90%;
     padding: 10px 0;
@@ -15,13 +15,14 @@
   .plans_textDecoration {
     width: 80%;
     max-width: 400px;
-    padding-bottom: 20px; }
+    margin-bottom: 60px; }
   .plans_textPlans {
     width: 90%;
     font-size: 16px;
     font-family: serif;
     font-weight: 400;
-    text-align: center; }
+    text-align: center;
+    max-width: 1200px; }
   .plans_containerCards {
     width: 90%;
     margin-top: 50px;
@@ -75,7 +76,7 @@
   border-radius: 8px; }
 
 .btn_suscription {
-  padding: 5px 25px;
+  padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -85,13 +86,11 @@
   color: white; }
 
 @media (min-width: 750px) {
-  .plans {
-    margin-top: 60px; }
-    .plans_tittle {
-      padding-top: 60px;
-      font-size: 30px; }
-    .plans_textPlans {
-      font-size: 20px; } }
+  .plans_tittle {
+    padding-top: 60px;
+    font-size: 30px; }
+  .plans_textPlans {
+    font-size: 20px; } }
 
 @media (min-width: 1024px) {
   .plans_tittle {
