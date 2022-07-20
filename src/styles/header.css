@@ -45,7 +45,7 @@
     font-size: 14px;
     overflow: hidden;
     transition: all 0.4s;
-    background-color: #2a7b9bf2; }
+    background-color: #313435f2; }
     .header_menu ul {
       width: 100%;
       list-style: none;
@@ -66,13 +66,13 @@
         border-bottom: 1px solid white; }
     .header_menu a {
       text-decoration: none;
-      color: #323232; }
+      color: #dddddd; }
   .header_menu--hidden {
     max-height: 0px; }
   .header--payment {
     backdrop-filter: blur(15px); }
   .header--background {
-    background: #2a7b9b; }
+    background-color: #313435f2; }
 
 @media (min-width: 1024px) {
   .header {

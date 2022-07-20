@@ -7,6 +7,16 @@
     @include flex-column-center();
     position: relative;
 
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.35) 100%, rgba(0, 0, 0, 0.35) 100%);
+    }
+
     &_containerInfo{
         @include flex-column-center(); 
         width: 90%;
@@ -21,6 +31,7 @@
         left: 0;
         top: 0;
         object-fit: cover;
+
     }
 
     &_information {
@@ -91,10 +102,7 @@
 @media (min-width: 1024px) {
 
     .home{
-
-        &_background{
-            height: 700px;
-        }
+        height: 700px;
 
         &_containerInfo{
             flex-direction: row;
@@ -133,10 +141,7 @@
 
 @media (min-width: 1250px) {
     .home{
-
-        &_background{
-            height: 790px;
-        }
+        height: 790px;
     }
 }
 

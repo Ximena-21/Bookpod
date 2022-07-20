@@ -15,7 +15,7 @@ document.addEventListener('scroll', () => {
     const scrollPosition = document.documentElement.scrollTop
 
     //si el scroll es mayor o igual a 600, le agrega la clase, que le pone color al header
-    if ( scrollPosition >= 600) {
+    if ( scrollPosition >= 400) {
         // console.log('cambiar color')
         header.classList.add('header--background')
     //si el scroll es menor remueva dicha clase
@@ -23,4 +23,17 @@ document.addEventListener('scroll', () => {
         header.classList.remove('header--background')
     }
 })
+
+
+const itemsMenu = document.querySelectorAll('.itemMenu')
+
+
+itemsMenu.forEach( itemMenu => {
+
+    itemMenu.addEventListener('click',()=>{
+        headerMenu.classList.add('header_menu--hidden')
+    })
+
+})
+
 
