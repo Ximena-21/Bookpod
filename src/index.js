@@ -1,10 +1,4 @@
-// import validator from './validator.js';
-
-// const btnHomeSuscription = document.querySelector('.btn_home')
-// btnHomeSuscription.addEventListener('click', () => {
-
-// })
-
+//declaramos en una lista con objetos los planes de suscription
 const plans = [
     {
         tittlePlan: "3",
@@ -29,10 +23,9 @@ const plans = [
     }
 ]
 
-
+//realizamos una funcion que nos permita renderizar todos los planes
 function renderPlan () {
     
-    // let plan = plans[actualPlan]
     const sectionPlans = document.querySelector('.plans_containerCards')
 
     plans.forEach((plan)=>{
@@ -53,25 +46,17 @@ function renderPlan () {
 
         const btnSuscription = cardBox.querySelector('.btn_suscription')
 
+        //asiganamos a cada boton de los planes para que al darle click nos redireccione al formulario de pago
         btnSuscription.addEventListener('click', () => {
-           
+           //guaradammos toda la lista de los planes en el localStorage para luego usar esta informacion 
+           // en la pagina de pago
             localStorage.setItem('selectedPlan', JSON.stringify(plan))
             location.href = '../pages/payment'
-            // const planSelect = evento.parentElement
-            // console.log(plan)
+
         })
-
-        // const selectPlan = plan.tittlePlan
-        // localStorage.setItem('selectPlan', plan)
-
-        // const pricePlan = plan.price
-        // localStorage.setItem('pricePlan', subtotal)
-        
     })    
 }
 
+
+//dejamos ejecutadad la funcion, para que al abrir la pagina esten renderizadas
 renderPlan()
-
-
-// localStorage.setItem('plansSuscription', JSON.stringify(plans))
-

@@ -105,7 +105,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
  ### Prototipo de alta fidelidad
 
-  #### Figam del proyecto
+  #### Figma del proyecto
   
   [REPO](https://www.figma.com/file/Rqf9q5jEtwQEcv2wGg6kLz/BookPod?node-id=0%3A1)
 
