@@ -7,17 +7,17 @@
   padding: 50px 20px 60px; }
   .bookGallery_tittle {
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
     text-align: center; }
   .bookGallery_textDecoration {
-    width: 85%;
+    width: 80%;
     max-width: 400px;
     padding-bottom: 20px; }
   .bookGallery_textBooks {
     width: 90%;
-    font-size: 24px;
+    font-size: 16px;
     font-family: serif;
     font-weight: 400;
     text-align: center; }
@@ -39,3 +39,16 @@
 
 .book8 {
   height: 320px; }
+
+@media (min-width: 750px) {
+  .bookGallery {
+    margin-top: 60px; }
+    .bookGallery_tittle {
+      padding-top: 60px;
+      font-size: 30px; }
+    .bookGallery_textBooks {
+      font-size: 20px; } }
+
+@media (min-width: 1024px) {
+  .bookGallery_tittle {
+    font-size: 32px; } }

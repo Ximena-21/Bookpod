@@ -8,17 +8,17 @@
   .plans_tittle {
     width: 90%;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
     text-align: center; }
   .plans_textDecoration {
-    width: 85%;
+    width: 80%;
     max-width: 400px;
     padding-bottom: 20px; }
   .plans_textPlans {
     width: 90%;
-    font-size: 24px;
+    font-size: 16px;
     font-family: serif;
     font-weight: 400;
     text-align: center; }
@@ -33,16 +33,17 @@
   .plans_card {
     width: 250px;
     height: 300px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
     text-align: center;
     background: white;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: relative; }
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 
 .card_textMonth {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -71,8 +72,7 @@
   background: #511849;
   color: white;
   padding: 50px 20px 20px;
-  border-radius: 8px;
-  clip-path: polygon(50% 24%, 57% 30%, 72% 53%, 100% 100%, 64% 100%, 32% 100%, 0 100%, 28% 53%, 42% 30%); }
+  border-radius: 8px; }
 
 .btn_suscription {
   padding: 5px 25px;
@@ -83,3 +83,16 @@
   box-shadow: #545454 0px 1px 7px;
   margin-top: 20px;
   color: white; }
+
+@media (min-width: 750px) {
+  .plans {
+    margin-top: 60px; }
+    .plans_tittle {
+      padding-top: 60px;
+      font-size: 30px; }
+    .plans_textPlans {
+      font-size: 20px; } }
+
+@media (min-width: 1024px) {
+  .plans_tittle {
+    font-size: 32px; } }

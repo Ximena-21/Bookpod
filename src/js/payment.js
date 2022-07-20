@@ -72,7 +72,7 @@ const formData = JSON.parse(localStorage.getItem('formData')) || {}
 
 //traemos los inputs que queremos que guarde informacion en el localStorage
 const nameInput = form.querySelector('[name=name]') //nombre
-nameInput.value = formData.name
+nameInput.value = formData.name || ""
 
 const identificationInput = form.querySelector('[name=identification]') //identificacion
 identificationInput.value = formData.identification
@@ -118,6 +118,9 @@ function checkOut (event) {
         //se crea un div para guardar el mensaje de validacion
         const msmValidate = document.createElement('div')
         msmValidate.className = 'msmValidate_box'
+        // const btnClose = document.createElement('button')
+        // btnClose.className = 'btn_close'
+        // msmValidate.appendChild(btnClose)
         
         pagePayment.appendChild(msmValidate)
         

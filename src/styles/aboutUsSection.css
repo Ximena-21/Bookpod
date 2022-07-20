@@ -9,12 +9,12 @@
   .aboutUs_tittle {
     width: 90%;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
     text-align: center; }
   .aboutUs_textDecoration {
-    width: 85%;
+    width: 80%;
     max-width: 400px;
     padding-bottom: 20px; }
   .aboutUs_boxInformation {
@@ -32,7 +32,7 @@
     align-items: center;
     padding-top: 20px; }
   .aboutUs_textInf {
-    font-size: 24px;
+    font-size: 16px;
     font-family: serif;
     font-weight: 400;
     text-align: center; }
@@ -46,7 +46,7 @@
     margin-top: 60px; }
     .aboutUs_tittle {
       padding-top: 60px;
-      font-size: 42px; }
+      font-size: 30px; }
     .aboutUs_containerInf--first {
       flex-direction: row;
       justify-content: space-around; }
@@ -56,9 +56,11 @@
     .aboutUs_textInf {
       width: 60%; }
     .aboutUs_textInf--first {
-      text-align: start; }
+      text-align: start;
+      font-size: 20px; }
     .aboutUs_textInf--second {
-      text-align: end; }
+      text-align: end;
+      font-size: 20px; }
     .aboutUs_img {
       margin: 0; } }
 
@@ -66,4 +68,5 @@
   .aboutUs {
     margin-top: 0; }
     .aboutUs_tittle {
-      padding-top: 0; } }
+      padding-top: 0;
+      font-size: 32px; } }
