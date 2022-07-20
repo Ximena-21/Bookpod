@@ -84,22 +84,19 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 <table>
     <tr>
-        <td>Landing Page / Inicio</td>
-        <td>Landing Page / Quienes somos</td>
+        <td>Landing Page / Inicio -  Quienes somos</td>
     </tr>
     <tr>
         <td><img src="tbajaFidelidad1.png" width=500 ></td>
     </tr>
     <tr>
-        <td>Landing Page / Ventajas</td>
-        <td>Landing Page / Libros</td>
+        <td>Landing Page / Ventajas - Libros</td>
     </tr>
     <tr>
         <td><img src="tbajaFidelidad2.png" width=500 ></td>
     </tr>
     <tr>
-        <td>Landing Page / Planes</td>
-        <td>Landing Page / Footer</td>
+        <td>Landing Page / Planes - Footer</td>
     </tr>
     <tr>
         <td><img src="tbajaFidelidad3.png" width=500 ></td>
