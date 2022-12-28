@@ -30,5 +30,5 @@ npm install -g sass
 
 _Proyecto desarrollado por:_
 
-* **Paula Ximena Anzola** - *Ingeniera ambiental* - [proyectos](https://github.com/Ximena-21)
+* **Paula Ximena Anzola** - *Ingeniera ambiental/Frontend Developer* - [proyectos](https://github.com/Ximena-21)
 
